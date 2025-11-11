@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena Pujar - Empowering Emotional WellBeing</title>
+    <link rel="stylesheet" href="{% static 'css/12stylesheet.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" type="image/jpeg" href="{% static 'images/Veena Main pic website.jpeg' %}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1>Raise Your Self-Esteem</h1>
+        </nav>
+    </header>
+
+    <div class="self-free">
+        <section class="selffree-content">
+            <div class="selffree-text">
+                <h2>Raise Your Self-Esteem</h2>
+                <h3>Focuss on professional help like therapy</h3>
+                <img src="{% static 'images/self-esteem-image.jpeg' %}" class="square-glow">
+                <div><br></div>
+                <p>Healing self-esteem after abuse is a gradual journey that requires patience & kindness towards yourself.</p>
+                <p>Therapies can help address core believes & provide coping strategies like practicing self-compassion, s
+                            etting boundaries, identifying & living by personal values & engaging in activities that build genuine confidence, 
+                            such as helping others or mastering new skills.</p>
+                <div><br></div>
+                <h3>Key steps are as below to raise the self-esteem :</h3>
+                <p>Separeting your selfworth from abuser's behaviuor.</p>
+                <p>Building a supportive network of understanding people around you.</p>
+                <p>Prioritizing Self care activities that bring you joy & fulfillment.</p>
+                <p>Protect yourself & resotre confidence.</p>
+                <p>Seeking a professional counsellor like me will further ease out process.</p>
+                <div><br></div>
+                <h3>Reach Us For More Help</h3>
+                <div><br></div>
+                <a href="" class="btn-box">🎥Zoom Meeting</a>
+                <h2>Select a Date :</h2>
+                <div id="calendar">
+                    <p><strong>Book</strong> it <strong>NOW!</strong> at <strong>₹699</strong></p>
+                </div>
+                <a href="" class="btn-box">Pay ₹699</a>
+                <h3>Need help or have questions?</h3>
+                <h3>We're just a message away...</h3>
+                <h3>Contact Us</h3>
+                <h4><p class="bx bxs-phone"><strong>+91 - 7760213227</strong></p></h4>
+                <h3>E-mail : happyhealinghappyfeeling@gmail.com</h3>
+            </div>
+        </section>
+    </div> 
+    <a href="{% url 'counApp:home' %}" class="btn-box">Back To Home</a>
+    
+    <script>
+        flatpickr("#calendar", {
+        inline: true,     // Displays calendar always visible
+        dateFormat: "d-m-y",
+        onChange: function(selectedDates, dateStr, instance) {
+        alert("You selected date on: " + dateStr);
+        }
+        });
+    </script>
+</body>
+</html>

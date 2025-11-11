@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena Pujar - Empowering Emotional WellBeing</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="icon" type="image/jpeg" href="{% static 'images/Veena Main pic website.jpeg' %}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-brain">
+                <i class='bx bxs-brain'></i>
+            </div>
+        </div>
+            
+        <nav class="navbar">
+            <a href="Home"  class="active">Home</a>
+            <a href="About" >About</a>
+            <a href="Counselling" >Counselling</a>
+            <a href="My Expertise" >My Expertise</a>
+            <a href="Contact" >Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="empty">                                                                                                                .                                                 .</div>
+            <div class="home-content">
+                <h1>Veena Pujar</h1>
+                <div><br></div>
+                <h4>"Counselor" - 'Narcisstic Abuse Recovery Professional'</h4>
+                <h4>MSc Psychology(2019-2021), Jain University, Bengaluru</h4>
+                <h4>Founder of - " happyhealinghappyfeeling "</h4>
+                <div><br></div>
+                <h4>E-mail : happyhealinghappyfeeling@gmail.com</h4>
+                <h4>Languages : English, Hindi, Kannada</h4>
+                <h4><p class="bx bxs-phone"><strong>+91 - 7760213227</strong></p></h4>
+            
+                <div class="home-sci">
+                    <a href="https://www.youtube.com/@happyhealinghappyfeeling" style="--i:1"><i class='bx bxl-youtube' id="bxl-youtube" ></i></a>
+                    <a href="https://m.facebook.com/veena.pujar.35/" style="--i:2"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#" style="--i:3"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://www.instagram.com/veenapn36/?igsh=MTV5OHU0dHpxbzRidg%3D%3D#" style="--i:4"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <a href="{% url 'counApp:aboutme' %}" class="btn-box">More About Me</a>
+            </div>
+        </div>
+
+        <div class="about-img">
+            <img src="{% static 'images/Veena Main pic website.jpeg' %}" class="circular-glow" alt="Profile Image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h4>Empowering Emotional Wellbeing</h4>
+            <p>I am Veena & it is my life's mission to help people to come out of their trauma & heal themselves using my tools & 
+                techniques which I provide through my counselling sessions.<br>I provide my services to the victims of narcissitic abused 
+                people & help them move from survival mode to the thriving mode. I help people to overcome CPTSD (Complex post traumatic 
+                stress disorder), heal narcissitic abuse & upgrade subconcious programming through my NLP (Neuro Linguistic Programming) 
+                skills so that client can be of their authentic self instead of who the trauma turned them into!.</p>
+            <h4>Why I Do?</h4>
+            <p>I survived narcissitic abuse from the childhood till my 2nd child & during that process, 
+                <br>I underwent many turmoils which life had put me through & I don't wanted to live anymore. 
+                <br>But my inner voice was telling me a different story, which was guiding me althrough from the beginning which made me 
+                still existing, surviving & thriving even after life had hit me to the rock bottom. I really understand how it 
+                feels when you are in the strom & no help is given to you but you are left alone to face the strom which you are going through both inside & outside. </p>
+            <h4>What I Do?</h4>
+            <p>Being a counsellor I empathize with my clients who underwent abuse in relationships & helping them 
+                to comeout  of their trauma & equip them with my tools & technologies so that they can use the same 
+                in their healing journey & <br><strong>Empowering Emotional WellBeing</strong>.</p>
+            
+            <a href="#" class="btn-box">😊 happyhealinghappyfeeling 😊</a>
+        </div>
+    </section>
+
+    <div class="video-content">
+        <h3>Know Me More</h3>
+        <section>
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="{% static 'images/VeenPujar-edited podcast.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </div>
+    
+    <section>
+        <div class="services" id="services">
+            <div class="container-pro">
+                <h1>Counselling Sessions</h1>
+                <div class="services-list">
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Child Counselling</h2>
+                        <h3>When parent is a narcissit</h3>
+                        <img src="{% static 'images/Child Counselling.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:childCounselling' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Couple Counselling</h2>
+                        <h3>It's Often Unsucessfull & Potentially Harmfull </h3>
+                        <img src="{% static 'images/Counselling Small Family.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:coupleCounselling' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Group Counselling</h2>
+                        <h3>Support groups for survivors of narcissitic abuse are highly beneficial</h3>
+                        <img src="{% static 'images/groupcounselling.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:groupCounselling' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Watched Youtube Videos?</h2>
+                        <h3>But you were not able to find the root cause</h3>
+                        <img src="{% static 'images/Narcissm-video-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:narcissm' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Set Yourself Free</h2>
+                        <h3>You tried leaving them & going no contact</h3>
+                        <img src="{% static 'images/Bird-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:selfFree' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Break Trauma Bond</h2>
+                        <h3>Understand in depth how you got trauma bonded to the Narcissits</h3><br>
+                        <img src="{% static 'images/BreakTraumaBond-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:breakTrauma' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>You Have Tried Dettachment</h2>
+                        <h3>But you share a child with them</h3>
+                        <img src="{% static 'images/dettachment-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:detachment' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Your Parents Are Narcissits</h2>
+                        <h3>Stop punishing & blaming yourself</h3>
+                        <img src="{% static 'images/parentNarcisst-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:parentNarcisst' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>How To Trust Your Gut</h2>
+                        <h3>Enforce boundaries</h3>
+                        <img src="{% static 'images/gut-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:gut' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Overcome Anxiety & Depression</h2>
+                        <h3>It impacts mental & physical health</h3>
+                        <img src="{% static 'images/Anxiety-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:anxiety' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>How To Deal With Toxic People</h2>
+                        <h3>Set clear boundaries</h3>
+                        <img src="{% static 'images/Toxic-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:toxic' %}" class="read">Book session</a>
+                    </div>
+
+                    <div class="child-content">
+                        <i class='bx bxs-brain' style='color:rgb(226, 226, 110)' ></i>
+                        <h2>Raise Your Self-Esteem </h2>
+                        <h3>Focus on professional help like therapy</h3>
+                        <img src="{% static 'images/self-esteem-image.jpeg' %}" class="square-glow">
+                        <a href="{% url 'counApp:selfEsteem' %}" class="read">Book session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <h1 class="sub-title">My<span>Skills</span></h1> -->
+    <div class="container">
+        <section class="skills-box">
+            <div class="myskills-text">
+                <h2>My Experience</h2>
+                <h3>Hi there, I'm Veena - MSc Psychology</h3>
+                <h4>Founder of 'happyhealinghappyfeeling'</h4>
+                <br>
+                <p>Since 2022, I've been helping hundreds of survivours of narcissitic abuse. I helped them not only survive but thrive.
+                    Before my recovery, I was last in confussion & waited for time to fix me & tried to make sense of pain that never stopped. Nothing truly changed untill...</p>
+                <p>Until I survived '<strong>ISAACS</strong>' syndrome, where muscles, particularly those in arms & legs continually tremble/shake with 
+                    a slight rapid motion. It is a chronic neuromuscular condition that causes constant muscle contraction even when 
+                    you are asleep or sedated also called neuromyotonia. This very rare disease has no known cause or cure.</p>
+                <p>The cause I found out from that trauma was hidden inside my body & I helped myself through subconcious programming & 
+                    came back to normalcy, which took me years together of self compassion & healing.</p>
+            </div>
+        </section>
+    </div>
+    
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+            <h4>Breakthrough Sessions With Veena Pujar(Worldwide)</h4>
+            <p>Here is what these counselling therapy sessions will help you:</p>
+            <p>👉 Release the extreme pain, sadness, confusion & other heavy emotions that keep you traped.</p>
+            <p>👉 Find liberating answers to questions like 'Is he/she truly a narcissit? Should I leave or stay? How do I heal & recovery? How do I parent with a narcissit? & Many more...</p>
+            <p>👉 To experience deep healing, hope & find the strength that you seem to have lost.</p>
+            <p>👉 To understand why you are not the crazy one & why they are like the way they are.</p>
+            <p>👉 Last but not the least, to know why this is not your end & how you can find yourself again.</p>
+            <div class="contact-list">
+                <li><i class="bx bxs-send" style="color: rgb(226, 226, 110);"></i> happyhealinghappyfeeling@gmail.com</li>
+                <li><i class="bx bxs-phone" style="color: rgb(226, 226, 110);"></i> +91 - 7760213227</li>
+                <div class="contact-icons">
+                    <a href="https://www.youtube.com/@happyhealinghappyfeeling"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://m.facebook.com/veena.pujar.35/"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href=""><i class='bx bxl-gmail' ></i></a>
+                    <a href="https://www.instagram.com/veenapn36/?igsh=MTV5OHU0dHpxbzRidg%3D%3D#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>ⓘ Fill Your Details For Queries :</h3>
+            <!-- <form method="post" action="{% url 'counApp:submit_contact' %}">
+               
+                <input type="username" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input name="address" placeholder="City / country"><br>
+                <input name="phone" placeholder="+91-1234567890"><br>
+                <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="submit" class="send">
+            </form> -->
+            <!-- <form id="ajaxForm">
+                // simpler inline AJAX form — you can reuse the same fields 
+                <input name="username" placeholder="Full name"><br>
+                <input name="email" placeholder="you@example.com"><br>
+                <input name="phone" placeholder="+91-1234567890"><br>
+                <input name="place" placeholder="City"><br>
+                <textarea name="message" placeholder="Message"></textarea><br>
+                <button id="ajaxSubmit" type="button">Send AJAX</button>
+            </form> -->
+            <form method="post" action="{% url 'counApp:submit_contact' %}">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+
+                <div>
+                    {{ form.username.label_tag }}<br>
+                    {{ form.username }}<br>
+                    {{ form.username.errors }}
+                </div>
+
+                <div>
+                    {{ form.email.label_tag }}<br>
+                    {{ form.email }}<br>
+                    {{ form.email.errors }}
+                </div>
+
+                <div>
+                    {{ form.phone.label_tag }}<br>
+                    {{ form.phone }}<br>
+                    {{ form.phone.errors }}
+                </div>
+
+                <div>
+                    {{ form.address.label_tag }}<br>
+                    {{ form.address }}<br>
+                    {{ form.address.errors }}
+                </div>
+
+                <div>
+                    {{ form.message.label_tag }}<br>
+                    {{ form.message }}<br>
+                    {{ form.message.errors }}
+                </div>
+
+                <input type="submit" value="submit" class="send">
+            </form>
+
+        </div>
+    </section>
+
+    <section class="disclm" id="disclm">
+        <div class="disclaimer-text">
+            <h2>Disclaimer</h2>
+            <p>The information shared here are in private sessions is for educational & self development purpose only. It should not be 
+                considerded a replacement for the therapy, advice, diagonsis or treatment from a licenced mental health professional. 
+                For any concerns about your mental health, please consult a qualified mental health professional or health care provider.
+            </p>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>😊 Happy Healing Happy Feeling 😊<br><br>© Veena Pujar</p>
+    </div>
+
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <script src="{% static 'js/main.js' %} "></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena Pujar - Empowering Emotional WellBeing</title>
+    <link rel="stylesheet" href="{% static 'css/4stylesheet.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" type="image/jpeg" href="{% static 'images/Veena Main pic website.jpeg' %}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1>Narcissm</h1>
+        </nav>
+    </header>
+
+    <div class="self-free">
+        <section class="selffree-content">
+            <div class="selffree-text">
+                <h2>You've Watched a Ton Of Youtube Videos On Narcissm</h2>
+                <h3>But you were not able to find the root cause</h3>
+                <img src="{% static 'images/Narcissm-video-image.jpeg' %}" class="square-glow">
+                <div><br></div>
+                <p>Many people seeking to leave such relationships turn to platforms like youtube for guidence, information & validation, 
+                    because of these complexities they are going through in their narcissitic relationship. Ofcourse victims of abuse always need 
+                    a validation & a shoulder to kneel on & hear to be heard & understood standing in their shoes, which will not be possible through 
+                    youtube videos or social media. While these youtube resources can be credibily helpfull for education & initial steps, it is important to 
+                    remeember that professional help is always required from a counsellor/therapist like me who can help you take you out from that trauma from the root cause.</p>
+                <p>Logically you know what to do but emotionaly you are chronically confussed. You still can't stop thinking about 
+                            the good memories & nice things they did once in a while. </p>
+                <div><br></div>
+                <h3>Reach Us For More Help</h3>
+                <div><br></div>
+                <a href="" class="btn-box">🎥Zoom Meeting</a>
+                <h2>Select a Date :</h2>
+                <div id="calendar">
+                    <p><strong>Book</strong> it <strong>NOW!</strong> at <strong>₹699</strong></p>
+                </div>
+                <a href="" class="btn-box">Pay ₹699</a>
+                <h3>Need help or have questions?</h3>
+                <h3>We're just a message away...</h3>
+                <h3>Contact Us</h3>
+                <h4><p class="bx bxs-phone"><strong>+91 - 7760213227</strong></p></h4>
+                <h3>E-mail : happyhealinghappyfeeling@gmail.com</h3>
+            </div>
+        </section>
+    </div> 
+    <a href="{% url 'counApp:home' %}" class="btn-box">Back To Home</a>
+    
+    <script>
+        flatpickr("#calendar", {
+        inline: true,     // Displays calendar always visible
+        dateFormat: "d-m-y",
+        onChange: function(selectedDates, dateStr, instance) {
+        alert("You selected date on: " + dateStr);
+        }
+        });
+    </script>
+</body>
+</html>

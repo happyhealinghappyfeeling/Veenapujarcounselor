@@ -1,0 +1,133 @@
+{% load static %}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    color: #0d0606;
+    background-color: rgb(206, 106, 48);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(226, 226, 110);          /*  1)sub-title 2)container 3)skills 4)heading1 5)Technical-bars 6)bar 7)info 8)progress-line html 9)progress-line css 10)progress-line javascript 11)progress-line javascript 12)progress-line mysql 13)container1 14)heading1 15)radial-bars 16)progress-bar 17)  */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+}
+
+.btn-box{
+    justify-content: center;
+    align-items: center;
+    display: inline-block;     
+    padding: 20px 10px;
+    background: rgb(226, 226, 110);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #0d0606;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10%;
+    margin-left: 40%;
+}
+
+
+.btn-box:hover{
+    box-shadow: 0 0 5px rgb(226, 226, 110),
+    0 0 25px rgb(226, 226, 110), 0 0 50px rgb(226, 226, 110),
+    0 0 100px rgb(226, 226, 110), 0 0 200px rgb(226, 226, 110)
+}
+
+.self-free-pro {
+    padding: 70px;
+}
+.self-free {
+    padding: 70px;
+    padding-top: 10%;
+    justify-content: center;
+    display: flex;
+    transition: .3s;
+    animation: slideTop .5s ease forwards;
+}
+
+.selffree-content {
+    border: 1px solid #0d0606;
+    padding: 60px 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px #0d0606, 0 0 35px #0d0606, 0 0 45px #0d0606;
+    border-radius: 10px;
+    color: #0d0606;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.selffree-content h2,h3{
+    text-align: center;
+}
+
+.selffree-content a{
+    text-align: center;
+}
+
+.selffree-content p{
+    text-align: center;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.flatpickr-calendar.inline, .flatpickr-calender{
+    display: block;
+    margin: 0 auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    position: static;
+    box-sizing: border-box;
+}
+
+.square-glow {
+  width: 300px; /* or any size */
+  height: 300px;
+  border-radius: 10%;
+  border: 8px solid rgb(226, 226, 110);
+  box-shadow: 0 0 15px rgb(226, 226, 110), 0 0 30px rgb(226, 226, 110), 0 0 45px rgb(226, 226, 110); /* glowing effect */
+  object-fit: auto;
+  transition: 0.3s ease-in-out;
+  display: block;
+  margin: 35px auto 10px auto;
+  justify-content: center;
+}

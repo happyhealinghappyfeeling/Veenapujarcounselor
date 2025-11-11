@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena Pujar - Empowering Emotional WellBeing</title>
+    <link rel="stylesheet" href="{% static 'css/8stylesheet.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" type="image/jpeg" href="{% static 'images/Veena Main pic website.jpeg' %}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1>Your Parents Are Narcissits</h1>
+        </nav>
+    </header>
+
+    <div class="self-free">
+        <section class="selffree-content">
+            <div class="selffree-text">
+                <h2>Your Parents Are Narcissits</h2>
+                <h3>Stop punishing & blaming yourself</h3>
+                <img src="{% static 'images/parentNarcisst-image.jpeg' %}" class="square-glow">
+                <div><br></div>
+                <p>Dealing with narcissitic parent it quiet challenging as own care givers abuse their own children.</p>
+                <p>Understand the root cause of trauma bond & heal you need a deep understanding of why you are addicted to the narcissit 
+                            through my tools & techniques used by many people & thrive thereafter.</p>
+                <div><br></div>
+                <h3>Signs which shows your parent is narcissitic in nature:</h3>
+                <P>Constant need for excessive admiration.</P>
+                <P>Child is used as a source of validation to boost their own ego.</P>
+                <P>Using fear & manipulation or criticism to maintain control.</P>
+                <P>Gaslightning & making the child to doubt their own reality.</P>
+                <P>Difficulty tolerating disobidence or any challenges to their authority.</P>
+                <P>Favortism are placing as a scapegoat.</P>
+                <div><br></div>
+                <h3>Reach Us For More Help</h3>
+                <div><br></div>
+                <a href="" class="btn-box">🎥Zoom Meeting</a>
+                <h2>Select a Date :</h2>
+                <div id="calendar">
+                    <p><strong>Book</strong> it <strong>NOW!</strong> at <strong>₹699</strong></p>
+                </div>
+                <a href="" class="btn-box">Pay ₹699</a>
+                <h3>Need help or have questions?</h3>
+                <h3>We're just a message away...</h3>
+                <h3>Contact Us</h3>
+                <h4><p class="bx bxs-phone"><strong>+91 - 7760213227</strong></p></h4>
+                <h3>E-mail : happyhealinghappyfeeling@gmail.com</h3>
+            </div>
+        </section>
+    </div> 
+    <a href="{% url 'counApp:home' %}" class="btn-box">Back To Home</a>
+    
+    <script>
+        flatpickr("#calendar", {
+        inline: true,     // Displays calendar always visible
+        dateFormat: "d-m-y",
+        onChange: function(selectedDates, dateStr, instance) {
+        alert("You selected date on: " + dateStr);
+        }
+        });
+    </script>
+</body>
+</html>
