@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-=jw))56wce7r+8&xq2te=o_1l9!si4v8fc4%8kl(g6gg8693jy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['www.veenapujar.com', 'veenapujar.com','veenapujarcounselor.onrender.com'] #'www.veenapujar.com', 'veenapujar.com' #added extra
+=======
+ALLOWED_HOSTS = ['veenapujar.com', 'www.veenapujar.com', 'veenapujarcounselor.onrender.com'] #'www.veenapujar.com', 'veenapujar.com' #added extra
+>>>>>>> 78a0e06f24e9967dc3663d6ad953952e98642797
 
 
 # Application definition
