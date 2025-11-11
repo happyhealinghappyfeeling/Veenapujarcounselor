@@ -1,1 +1,1 @@
-web: gunicorn counProj.wsgi
+web: gunicorn VP-Counselling-CODE.counProj.wsgi
