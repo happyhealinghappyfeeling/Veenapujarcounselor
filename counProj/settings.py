@@ -27,7 +27,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['veenapujar.com', 'www.veenapujar.com', 'veenapujarcounselor.onrender.com'] #'www.veenapujar.com', 'veenapujar.com' #added extra
+ALLOWED_HOSTS = ['veenapujar.com', 'www.veenapujar.com', 'veenapujarcounselor.onrender.com', '127.0.0.1', 'localhost'] #'www.veenapujar.com', 'veenapujar.com' #added extra
 
 
 # Application definition
