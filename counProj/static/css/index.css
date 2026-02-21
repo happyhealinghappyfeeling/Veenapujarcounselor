@@ -23,36 +23,37 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
 }
 
 .logo{
     position: relative;
     font-size: 17px;
-    color: #0d0606;
+    color:  #0d0606;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
     opacity: 0;
-    animation: slideRight 1s ease forwards;
+    animation: slideRight 1s ease forwards; 
+    margin-right: 10px;
+    margin-left: -80px;
 }
-.logo-brain{
-    color: #0d0606;
-    font-size: 25px;
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
 }
 
 .navbar a{
-    display: inline-block;
-    font-size: 25px;
-    color: #0d0606;
+    font-size: 20px;
+    color:  #0d0606;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
 }
-
 .navbar a:hover{
     color: rgb(206, 106, 48)
 }
@@ -78,7 +79,7 @@ body{
 }
 
 .home-content h3{
-    font-size: 32px;
+    font-size: 17px;
     font-weight: 700;
     
 }

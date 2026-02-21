@@ -1,10 +1,12 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veena Pujar - Empowering Emotional WellBeing</title>
+    <title>{% blocktrans %} Veena Pujar - Empowering Emotional WellBeing {% endblocktrans %}</title>
     <link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -75,7 +77,40 @@
         </section>
     </div>
 
-    <a href="{% url 'counApp:home' %}" class="btn-box">Back To Home</a>
+    <div class="my-expertise">
+        <section class="expert">
+            <div class="expert-text">
+                <h2>Awards & Recognitions</h2>
+                <div class="child-content">
+                        <h3>{% trans "Awards" %}</h3>
+                        <h3>{% trans "IMB" %}</h3>
+                        <img src="{% static 'images/VP-1.png' %}" class="square-glow">
+                </div>
+                <div class="child-content">
+                        <h3>{% trans "Awards" %}</h3>
+                        <h3>{% trans "IMB" %}</h3>
+                        <img src="{% static 'images/vP-2.png' %}" class="square-glow">
+                </div>
+                <div class="child-content">
+                        <h3>{% trans "Awards" %}</h3>
+                        <h3>{% trans "IMB" %}</h3>
+                        <img src="{% static 'images/' %}" class="square-glow">
+                </div>
+                <div class="child-content">
+                        <h3>{% trans "Awards" %}</h3>
+                        <h3>{% trans "IMB" %}</h3>
+                        <img src="{% static 'images/' %}" class="square-glow">
+                </div>
+                <div class="child-content">
+                        <h3>{% trans "Awards" %}</h3>
+                        <h3>{% trans "IMB" %}</h3>
+                        <img src="{% static 'images/' %}" class="square-glow">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a href="{% url 'counApp:home' %}" class="btn-box">{% trans "Back To Home" %}</a>
     
     <script src="{% static 'js/main.js' %} "></script>
 </body>

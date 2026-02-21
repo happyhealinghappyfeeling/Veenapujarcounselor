@@ -64,6 +64,7 @@ def submit_contact(request):
             return render(request, 'index.html', {'form': form})# re-render the form with errors
     return redirect('counApp:home')
 
+
 # def submit_contact_ajax(request):
 #     if request.method == 'POST' and request.headers.get('x-requested-with') == 'XMLHttpRequest':
 #         form = ContactForm(request.POST)

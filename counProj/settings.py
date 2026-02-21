@@ -46,6 +46,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', #added extra
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  #NNNNNNEEEEWWWWWWWWWW
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -114,6 +115,19 @@ USE_I18N = True
 
 USE_TZ = True
 
+#NNNNNNNNNNNNNNNEEEEEEEEEEEEEWWWWWWWWWWWWWW
+USE_L10N = True
+
+LANGUAGES = [
+    ('en', 'English'),
+    ('kn', 'Kannada'),
+    ('hi', 'hindi'),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+#NNNNNNNNNNNNNNNEEEEEEEEEEEEEWWWWWWWWWWWWWW
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/

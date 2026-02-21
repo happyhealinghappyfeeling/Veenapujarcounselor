@@ -17,8 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include #(1)
 from counApp import views
+from django.conf.urls.i18n import i18n_patterns #NNNNNNNNNNNNNNNNNNNEEEEEEEEEEEEEEEEWWWWWWWWWWWW
 
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('', include('counApp.urls')), #(1)
+# ]
+
+#NNNNEEEEEEEEWWWWWWWWWWWW
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('counApp.urls')), #(1)
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
+
+urlpatterns += i18n_patterns(
+    path('admin/', admin.site.urls),
+    path('', include('counApp.urls')),
+)
+#NNNNEEEEEEEEWWWWWWWWWWWW

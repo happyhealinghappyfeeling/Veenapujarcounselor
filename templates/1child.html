@@ -1,10 +1,12 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veena Pujar - Empowering Emotional WellBeing</title>
+    <title>{% blocktrans %} Veena Pujar - Empowering Emotional WellBeing {% endblocktrans %} </title>
     <link rel="stylesheet" href="{% static 'css/1stylesheet.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -13,43 +15,45 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <h1>Child Counselling</h1>
+            <h1>{% trans "Child Counseling" %}</h1>
         </nav>
     </header>
 
     <div class="self-free">
         <section class="selffree-content">
             <div class="selffree-text">
-                <h2>Child Counselling</h2>
-                <h3>When parent is a narcissit</h3>
+                <h2>{% trans "Child Counseling" %}</h2>
+                <h3>{% trans "When parent is a narcissit" %}</h3>
                 <img src="{% static 'images/Child Counselling.jpeg' %}" class="square-glow">
                 <div><br></div>
-                <p>Child counselling sessions involves focusing on child's emotional needs by providing validation, building self-esteem 
+                <p>{% blocktrans %} Child counselling sessions involves focusing on child's emotional needs by providing validation, building self-esteem 
                     & teaching resiliance. Me & my team of therapist help children understand their feelings are valid & build a sense of 
-                    self separeate from the parents approval. </p>
-                <p>Children of narcissitic parents often fall into specific role, primarly the golden child & the scapegoat. Though other types like 
+                    self separeate from the parents approval.{% endblocktrans %}</p>
+                <p>{% blocktrans %} Children of narcissitic parents often fall into specific role, primarly the golden child & the scapegoat. Though other types like 
                             invisible or ignored child. The golden child is idealized & seen as an extension of parent's ego, while the scapegoat is blamed for the 
                             family's problems. Other children may become people pleasers, Constantly seeking approval or over achievers, driven to succeed to gain 
-                            worth.</p>
+                            worth.{% endblocktrans %}</p>
                 <div><br></div>
-                <h3>Reach Us For More Help</h3>
+                <h3>{% trans "Reach Us For More Help" %}</h3>
                 <div><br></div>
+                <h3>{% trans "Online Sessions are conducted through the Google meet / Zoom meet / Whatsapp Video Call" %}</h3>
                 <a href="" class="btn-box">🎥Zoom Meeting</a>
                 <h2>Select a Date :</h2>
                 <div id="calendar" >
-                    <p><strong>Book</strong> it <strong>NOW!</strong> at <strong>₹699</strong></p>
+                    <p><strong>Book</strong> it <strong>NOW!</strong> at <strong>₹999</strong></p>
                 </div>
                 <div><br></div>
-                <a href="" class="btn-box">Pay ₹699</a>
-                <h3>Need help or have questions?</h3>
-                <h3>We're just a message away...</h3>
-                <h3>Contact Us</h3>
+                <h2>{% trans "Contact us before the Payment" %}</h2>
+                <a href="" class="btn-box">{% trans "Pay" %} ₹999</a>
+                <h3>{% trans "Need help or have questions?" %}</h3>
+                <h3>{% trans "We're just a message away..." %}</h3>
+                <h3>{% trans "Contact Us" %}</h3>
                 <h4><p class="bx bxs-phone"><strong>+91 - 7760213227</strong></p></h4>
-                <h3>E-mail : happyhealinghappyfeeling@gmail.com</h3>
+                <h3>{% trans "E-mail" %} : happyhealinghappyfeeling@gmail.com</h3>
             </div>
         </section>
     </div> 
-    <a href="{% url 'counApp:home' %}" class="btn-box">Back To Home</a>
+    <a href="{% url 'counApp:home' %}" class="btn-box">{% trans "Back To Home" %}</a>
     
     <script>
         flatpickr("#calendar", {

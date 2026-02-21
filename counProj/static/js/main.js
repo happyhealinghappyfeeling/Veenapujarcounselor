@@ -47,8 +47,8 @@ scrollTopBtn.addEventListener("click", (e) => {
 });
 
 // =============== Typed.js Animation ===============
-const typed = new Typed(".logo", {
-  strings: ["happy healing happy feeling", "Veena Pujar", "Behavioural Counseling Professional"],
+let typed = new Typed(".logo", {
+  strings: window.TYPED_STRINGS,       // ['happy healing happy feeling', 'Veena Pujar', 'Behavioural Counseling Therapist'];
   typeSpeed: 90,
   backSpeed: 60,
   backDelay: 1200,
