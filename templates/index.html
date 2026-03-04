@@ -357,5 +357,64 @@
         });
     </script>
     <!-- <script src="{% static 'js/main.js' %} "></script> -->
+
+    <!--ChatBot HTML code-->
+    <div class="floating-buttons">
+        <!-- Call Button -->
+        <a href="tel:7760213227" class="float-btn call-btn">📞</a>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/917760213227?text=Hello%20I%20want%20to%20enquire" class="float-btn whatsapp-btn" target="_blank">💬</a>
+    </div>
+
+    <!-- ChatBot CSS code-->
+    <!-- Floating Call & WhatsApp Buttons -->
+    <style>
+    /* Floating Buttons Container */
+    .floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99999;
+    }
+
+    /* Common Button Style */
+    .float-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    }
+
+    /* Call Button */
+    .call-btn {
+    background-color: rgb(226, 226, 110);
+    }
+
+    .call-btn:hover {
+    background-color: rgb(226, 226, 110);
+    transform: scale(1.1);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+    background-color: rgb(226, 226, 110);
+    }
+
+    .whatsapp-btn:hover {
+    background-color: rgb(226, 226, 110);
+    transform: scale(1.1);
+    }
+    </style>
+
 </body>
 </html>

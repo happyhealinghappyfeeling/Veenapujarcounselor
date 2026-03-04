@@ -60,6 +60,12 @@ body{
 .empty{
     background:transparent;
 }
+
+.lang-switcher{
+    color: #0d0606;
+    background-color: rgb(206, 106, 48);
+}
+
 .home{
     position: relative;
     width: 100%;
