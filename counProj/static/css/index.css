@@ -61,8 +61,13 @@ body{
     background:transparent;
 }
 
-.lang-switcher{
-    color: #0d0606;
+.lang-switcher select{
+    color: white;
+    background-color: rgb(206, 106, 48);
+}
+
+.lang-switcher button{
+    color: white;
     background-color: rgb(206, 106, 48);
 }
 
