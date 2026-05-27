@@ -362,13 +362,16 @@
 <div class="floating-buttons">
 
     <!-- Call Button -->
-    <a href="tel:7760213227" class="float-btn call-btn"><i style="color:white;">☎</a>
+    <a href="tel:7760213227" 
+        class="float-btn call-btn"
+        target="_blank">
+       <img src="{% static 'images/mobile.png' %}" alt="phone">
+    </a>
 
     <!-- WhatsApp Button -->
     <a href="https://wa.me/917760213227?text=Hello%20I%20want%20to%20enquire"
        class="float-btn whatsapp-btn"
        target="_blank">
-       
        <img src="{% static 'images/whatsapp.png' %}" alt="WhatsApp">
     </a>
 
@@ -404,9 +407,16 @@
 
 /* Call Button */
 .call-btn {
-    background-color: rgb(14, 177, 39);
-    font-size: 22px;
+    font-size: 0%;
     color: black;
+}
+
+/* Mobile Button */
+.call-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* WhatsApp Button */
